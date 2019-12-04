@@ -24,8 +24,6 @@ TOKEN=$(docker swarm join-token -q worker)
 for i in 2 3; do
 	eval $(docker-machine env node-$i)
 	docker swarm join --token $TOKEN $(docker-machine ip node-1):2377
-	docker build -t if1004_grafana grafana
-	docker build -t if1004_prometheus prometheus
 	docker build -t if1004_node-exporter node-exporter
 done
 
