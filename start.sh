@@ -30,3 +30,5 @@ docker-machine ip node-1
 eval $(docker-machine env node-1)
 
 docker stack deploy -c docker-compose.yml if1004
+
+docker stack deploy -c app-demo/docker-compose.yml app
