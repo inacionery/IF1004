@@ -58,4 +58,5 @@
 - Remove aplicação
 	> docker stack rm if1004
 
-- https://medium.com/@fidelissauro/docker-swarm-quickstart-do-seu-cluster-local-com-docker-machine-e-virtualbox-44d4096deae
+- Fonte:
+https://medium.com/@fidelissauro/docker-swarm-quickstart-do-seu-cluster-local-com-docker-machine-e-virtualbox-44d4096deae
