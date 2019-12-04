@@ -1,7 +1,7 @@
 version: '3'
 services:
   api:
-    image: example/api
+    image: msfidelis/example-api
     ports:
       - "80:80"
     
