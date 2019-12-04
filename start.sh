@@ -23,6 +23,10 @@ done
 
 echo "Swarm cluster criado com sucesso!";
 
-eval $(docker-machine env minion01)
+echo "Ip do manager:";
+
+docker-machine ip node-1
+
+eval $(docker-machine env node-1)
 
 docker stack deploy -c docker-compose.yml if1004
