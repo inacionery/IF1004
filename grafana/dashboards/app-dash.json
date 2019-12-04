@@ -16,10 +16,46 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "iteration": 1575425818515,
+  "iteration": 1575481489049,
   "links": [],
   "panels": [
     {
+      "alert": {
+        "alertRuleTags": {},
+        "conditions": [
+          {
+            "evaluator": {
+              "params": [
+                12
+              ],
+              "type": "gt"
+            },
+            "operator": {
+              "type": "and"
+            },
+            "query": {
+              "params": [
+                "A",
+                "5m",
+                "now"
+              ]
+            },
+            "reducer": {
+              "params": [],
+              "type": "max"
+            },
+            "type": "query"
+          }
+        ],
+        "executionErrorState": "alerting",
+        "for": "5m",
+        "frequency": "1m",
+        "handler": 1,
+        "message": "Price too high",
+        "name": "CPU usage cost alert",
+        "noDataState": "no_data",
+        "notifications": []
+      },
       "aliasColors": {},
       "bars": false,
       "cacheTimeout": null,
@@ -79,7 +115,15 @@
           "step": 2
         }
       ],
-      "thresholds": [],
+      "thresholds": [
+        {
+          "colorMode": "critical",
+          "fill": true,
+          "line": true,
+          "op": "gt",
+          "value": 12
+        }
+      ],
       "timeFrom": null,
       "timeRegions": [],
       "timeShift": null,
@@ -437,9 +481,9 @@
         "sort": 0,
         "tagValuesQuery": "label_values({node_id=\"$tag\"},node_name)",
         "tags": [
-          "master",
-          "minion02",
-          "minion01"
+          "node-1",
+          "node-3",
+          "node-2"
         ],
         "tagsQuery": "label_values(node_meta, node_name)",
         "type": "query",
@@ -553,5 +597,5 @@
   "timezone": "",
   "title": "App Billing",
   "uid": "zr_baSRmk",
-  "version": 3
+  "version": 2262
 }
