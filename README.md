@@ -1,5 +1,5 @@
 # Projeto IN0980(IF1004)
-Este repositório contém os arquivos do projeto da disciplina IF1004/IN0980 do [Centro de Informática](https://www3.cin.ufpe.br/br/) ministrada pelo Prof. Vinícios Garcia (https://github.com/vinicius3w).
+Este repositório contém os arquivos do projeto da disciplina IF1004/IN0980 do [Centro de Informática](https://www3.cin.ufpe.br/br/) ministrada pelo Prof. Vinicius Garcia (https://github.com/vinicius3w).
 
 Integrantes:
 * Carlos Zimmerle ([Gmail](mailto:cezl@cin.ufpe.br) | [Github](https://github.com/carloszimm))
