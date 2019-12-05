@@ -1,5 +1,5 @@
-# Projeto IN0980(IF1004)
-Este repositório contém os arquivos do projeto da disciplina IF1004/IN0980 do [Centro de Informática](https://www3.cin.ufpe.br/br/) ministrada pelo Prof. Vinicius Garcia (https://github.com/vinicius3w).
+# Projeto IN0980 (IF1004)
+Este repositório contém os arquivos do projeto da disciplina IN0980 do [Centro de Informática](https://www3.cin.ufpe.br/br/) ministrada pelo Prof. Vinicius Garcia (https://github.com/vinicius3w).
 
 Integrantes:
 * Carlos Zimmerle ([Gmail](mailto:cezl@cin.ufpe.br) | [Github](https://github.com/carloszimm))
@@ -21,10 +21,12 @@ Integrantes:
 
 # Executando
 
-O projeto simula a provisão de um cluster swarm rodando em três maquinas virtuais, criadas com o auxílio do docker-machine], e a possibilidade de um usuário visualizar o consumo e bilhetação (billing) do serviço baseado em métricas coletadas no cluster.
+O projeto simula a provisão de um cluster swarm rodando em três maquinas virtuais, criadas com o auxílio do docker-machine, e a possibilidade de um usuário visualizar o consumo e bilhetação (billing) do serviço baseado em métricas coletadas no cluster.
 
 Para facilitar, um bash script foi criado no root do projeto (start.sh).
 > sudo ./start.sh
+
+* OBS: AS PRIMEIRAS TECNOLOGIAS RELACIONADAS NA SEÇÃO ANTERIOR DEVEM ESTAR INSTALADAS ANTES DA EXECUÇÃO DO SCRIPT
 
 Ao executá-lo, as três VMs são automicamente criadas, sendo uma delas configurada para ser o manager do cluster e as outras duas assumindo os papeis de workers. Nesta configuração, Grafana e Prometheus são executadas apenas no nó manager. Por um outro lado, Node exporter e cAdvisor são configurados para serem implantados de forma global, isto é, eles rodam em todos os nós. São esses dois programas responsáveis pela disponibilização de métricas que são consumidas pelo Prometheus. O Grafana por sua vez executa de tempos em tempos consultas ao Prometheus para mostrar de forma gráfica o consumo dos nós (inserido no Prometheus através do node exporter) e consumo dos serviços (inserido através do cAdvisor).
 
